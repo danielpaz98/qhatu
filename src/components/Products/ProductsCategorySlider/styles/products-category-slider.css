@@ -1,0 +1,39 @@
+.products-category-slider {
+	position: relative;
+}
+
+.products-category-list {
+	display: flex;
+	justify-content: center;
+	grid-gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.products-category {
+	position: relative;
+	color: #ffffff;
+	text-shadow: 0px 3px 6px #00000085;
+}
+
+.products-category-text {
+	position: absolute;
+	top: 83%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.products-category-text h2 {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.products-category-text a {
+	text-decoration: underline;
+}
+
+.products-category img {
+	width: 254px;
+	height: 443px;
+	object-fit: cover;
+}
