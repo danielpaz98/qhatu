@@ -1,0 +1,152 @@
+.main-footer {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 40px;
+	min-height: 427px;
+	background-color: #f2f2f2;
+	padding: 1rem;
+	box-shadow: 0px 1px 3px #00000029;
+}
+
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	order: 1;
+}
+
+.footer-info-block {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-socials {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-info > div:first-child {
+	display: flex;
+	grid-gap: 18px;
+}
+
+.footer-info > div:first-child .footer-title {
+	margin-top: 0;
+}
+
+.footer-socials-contact {
+	order: 1;
+}
+
+.footer-socials-contact .footer-title {
+	margin-top: 0;
+}
+
+.footer-info-copy {
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.footer-title {
+	font-size: var(--big-font-size);
+	text-transform: uppercase;
+}
+
+.footer-socials-icons {
+	display: flex;
+	grid-gap: 14px;
+}
+
+.footer-socials-icons-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #333e48;
+	border-radius: 50%;
+}
+
+.footer-socials-icons-item svg {
+	fill: #333e48;
+}
+
+.footer-socials-newsletter .footer-title {
+	margin-bottom: 10px;
+}
+
+.footer-socials-newsletter {
+	max-width: 450px;
+}
+
+.footer-socials-newsletter-text {
+	max-width: 400px;
+	margin-top: 0;
+}
+
+.footer-socials-newsletter-input-block {
+	display: flex;
+}
+
+.footer-socials-newsletter-subscribe p {
+	font-size: var(--xsmall-font-size);
+}
+
+.footer-socials-newsletter-subscribe span {
+	color: #00abea;
+}
+
+.footer-socials-newsletter-input {
+	flex: 1;
+	border: 1px solid #e3e3e3;
+	border-radius: 2px;
+	margin-right: 14px;
+	padding: 7px 14px;
+}
+
+.footer-socials-newsletter-btn {
+	background-color: #00abea;
+	color: #ffffff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	padding: 7px 14px;
+}
+
+.footer-socials-type-payments {
+	display: none;
+}
+
+@media screen and (min-width: 640px) {
+	.main-footer {
+		justify-content: center;
+		padding: 30px 60px;
+	}
+
+	.footer-info {
+		order: initial;
+	}
+
+	.footer-info-type-payments {
+		display: none;
+	}
+
+	.footer-socials-type-payments {
+		display: block;
+	}
+
+	.footer-info-copy {
+		margin-top: 0;
+		text-align: left;
+	}
+
+	.footer-socials-contact {
+		order: initial;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.main-footer {
+		grid-gap: 80px;
+	}
+}
