@@ -1,0 +1,190 @@
+.auth-form-card {
+	position: relative;
+	width: 450px;
+	min-height: 450px;
+	background-color: #ffffff;
+	margin-top: 2rem;
+}
+
+.auth-form-card [class^="alert"] {
+	position: absolute;
+	top: -14px;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	transition-property: opacity, transform;
+	transition-duration: 0.3s;
+}
+
+.auth-form-card [class^="alert"].show {
+	top: -14px;
+	left: 50%;
+	transform: translateX(-50%) scale(1);
+}
+
+.auth-form-card-tabs-control {
+	display: none;
+}
+
+.auth-form-card-tabs-title {
+	cursor: pointer;
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.auth-form-card-tabs-title h4 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.auth-form-card-tabs-control:checked + .auth-form-card-tabs-title {
+	text-decoration: underline;
+}
+
+.line {
+	position: relative;
+	height: 8px;
+	border-radius: 7px;
+	background-color: #d6d6d6;
+	width: 100%;
+	display: block;
+	transition: all 0.4s ease;
+}
+
+.line::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	border-radius: inherit;
+	background-color: #333e48;
+	width: 50%;
+	height: 100%;
+	transition: all 0.4s ease;
+}
+
+.auth-form-card-tabs-control#signup:checked ~ .line::before {
+	left: 50%;
+}
+
+.auth-form {
+	margin-top: 24px;
+}
+
+.auth-form .form-error {
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+	grid-gap: 10px;
+	color: #ff3434;
+	font-size: var(--small-font-size);
+}
+
+.auth-form .auth-form-control {
+	font-size: var(--big-font-size);
+}
+
+.auth-form .auth-form-control-input {
+	border: 2px solid #333e48;
+	border-radius: 4px;
+	padding: 8px 14px;
+}
+
+.auth-form .auth-form-control-input.error {
+	border: 2px solid #ff3434;
+}
+
+.auth-form-control label {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.auth-form-control input::placeholder {
+	color: #bfbfbf;
+}
+
+.auth-form .auth-form-control:first-child {
+	margin-bottom: 24px;
+}
+
+.auth-form-forgot-password {
+	margin-top: 1rem;
+}
+
+.auth-form-forgot-password a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.auth-form-hold-session input {
+	position: relative;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #000;
+	border-radius: 4px;
+	flex-shrink: 0;
+}
+
+.auth-form-hold-session input:checked {
+	background: #0075ff;
+	color: #ffffff;
+	border: none;
+}
+
+.auth-form-hold-session input:checked::before {
+	font-family: "Material Icons";
+	content: "check";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.auth-form-hold-session label {
+	cursor: pointer;
+}
+
+.auth-form-hold-session {
+	margin-top: 30px;
+	display: flex;
+	grid-gap: 8px;
+}
+
+.auth-form .auth-form-btn {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	background-color: #00abea;
+	background-position: center;
+	opacity: 0.5;
+	color: #ffffff;
+	border-radius: 4px;
+	width: 100%;
+	padding: 14px 0;
+	font-size: var(--h4-font-size);
+	transition-property: background-color, background-size;
+	transition-duration: 0.8s;
+}
+
+.auth-form .auth-form-btn:hover {
+	background-color: #00abea;
+	background-image: radial-gradient(circle, transparent 1%, #00abea 1%);
+	background-size: 15000%;
+}
+
+.auth-form .auth-form-btn:active {
+	background-color: #40bbe7;
+	background-size: 100%;
+	transition-property: background-color, background-size;
+	transition-duration: 0s;
+}
+
+@media screen and (min-width: 640px) {
+	.auth-form-card {
+		margin-bottom: 60px;
+	}
+}
