@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+
+.discount-banner {
+	position: relative;
+	margin-top: 2rem;
+}
+
+.discount-banner-img img {
+	height: 323px;
+	width: 100%;
+	object-fit: cover;
+	object-position: 20% 20%;
+}
+
+.discount-banner-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	text-shadow: 0px 3px 6px #0000007d;
+	text-align: center;
+}
+
+.discount-banner-title p {
+	margin: 0;
+	line-height: 0.9;
+}
+
+.discount-banner-title p:first-child,
+.discount-banner-title p:nth-child(2) {
+	font-size: 6rem;
+}
+
+.discount-banner-title p:last-child {
+	font-size: 1.5rem;
+	margin-left: 7rem;
+	line-height: 0.5;
+}
+
+@media screen and (min-width: 800px) {
+	.discount-banner-title {
+		left: 40px;
+		transform: translateY(-50%);
+	}
+
+	.discount-banner-title p:first-child,
+	.discount-banner-title p:nth-child(2) {
+		font-size: 7.75rem;
+	}
+
+	.discount-banner-title p:last-child {
+		font-size: 2.375rem;
+	}
+}
