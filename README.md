@@ -19,7 +19,7 @@
 
 ## Overview
 
-<h3 align="center">Desktop</h3>
+<h1 align="center">Desktop</h1>
 
 <div align="center">
 	<img src="/src/assets/github-images/overview-desktop-auth.png">
@@ -29,7 +29,7 @@
 	<img src="/src/assets/github-images/overview-desktop-home.png">
 </div>
 
-<h3 align="center">Mobile</h3>
+<h1 align="center">Mobile</h1>
 
 <div align="center">
 	<img src="/src/assets/github-images/overview-mobile-auth.png">
