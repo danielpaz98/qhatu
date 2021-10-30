@@ -1,0 +1,29 @@
+[class^="alert"] {
+	display: flex;
+	align-items: center;
+	grid-gap: 14px;
+	min-width: 100%;
+	min-height: 54px;
+	background-color: #c9c9c9f2;
+	border-radius: 6px;
+	padding: 14px;
+}
+
+[class^="alert"] span,
+[class^="alert"] button {
+	color: #ffffff;
+}
+
+[class^="alert"] span {
+	flex: 1;
+}
+
+.alert-success {
+	background-color: #26b26c;
+}
+
+@media screen and (min-width: 640px) {
+	[class^="alert"] {
+		min-width: 524px;
+	}
+}
