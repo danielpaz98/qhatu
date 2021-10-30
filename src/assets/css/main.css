@@ -1,0 +1,117 @@
+@import "./normalize.css";
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--body-font: "Roboto", sans-serif;
+	/* Mobile font sizes */
+	--h1-font-size: 1.875rem;
+	--h2-font-size: 1.5rem;
+	--h3-font-size: 1.25rem;
+	--h4-font-size: 1rem;
+	--big-font-size: 1rem;
+	--base-font-size: 0.875rem;
+	--small-font-size: 0.75rem;
+	--xsmall-font-size: 0.625rem;
+}
+
+@media screen and (min-width: 800px) {
+	:root {
+		/* Desktop font sizes */
+		--h1-font-size: 2.5rem;
+		--h2-font-size: 2rem;
+		--h3-font-size: 1.5rem;
+		--h4-font-size: 1.25rem;
+		--big-font-size: 1.125rem;
+		--base-font-size: 1rem;
+		--small-font-size: 0.875rem;
+		--xsmall-font-size: 0.75rem;
+	}
+}
+
+body {
+	margin: 0;
+	font-family: var(--body-font);
+	font-size: var(--base-font-size);
+	color: #333e48;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+button,
+input {
+	outline: none;
+	border: none;
+	font-weight: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+}
+
+h4 {
+	font-size: var(--h4-font-size);
+}
+
+select {
+	line-height: 1.5;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main {
+	flex: 1;
+	box-shadow: 0px 1px 3px #00000029;
+	overflow: auto;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
