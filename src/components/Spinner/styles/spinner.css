@@ -1,0 +1,16 @@
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner {
+	--border-color: rgb(242 242 242 / 40%);
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	border: 0.3rem solid rgba(151, 159, 208, 0.3);
+	border-top-color: var(--border-color);
+	border-bottom-color: var(--border-color);
+	animation: 1.5s spin infinite linear;
+}
