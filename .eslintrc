@@ -4,7 +4,7 @@
 		"es2021": true,
 		"node": true
 	},
-	"extends": ["plugin:react/recommended", "plugin:react-hooks/recommended", "standard", "prettier"],
+	"extends": ["plugin:react/recommended", "plugin:react-hooks/recommended", "prettier"],
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
@@ -13,10 +13,10 @@
 		"sourceType": "module"
 	},
 	"settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
+		"react": {
+			"version": "detect"
+		}
+	},
 	"rules": {
 		"prefer-const": "warn",
 		"no-unused-vars": "warn",
