@@ -12,6 +12,11 @@
 		"ecmaVersion": 12,
 		"sourceType": "module"
 	},
+	"settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
 	"rules": {
 		"prefer-const": "warn",
 		"no-unused-vars": "warn",

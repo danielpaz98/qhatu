@@ -5,7 +5,7 @@ export function ArrowLeft(props) {
 		<svg height="71" viewBox="0 0 71 71" width="71" {...props}>
 			<defs>
 				<filter filterUnits="userSpaceOnUse" height="71" id="Elipse_1" width="71" x="0" y="0">
-					<feOffset dy="3" input="SourceAlpha" />
+					<feOffset dy="3" />
 					<feGaussianBlur result="blur" stdDeviation="3" />
 					<feFlood floodOpacity="0.161" />
 					<feComposite in2="blur" operator="in" />
